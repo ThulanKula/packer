@@ -11,6 +11,7 @@
             "most_recent": true
         },
         "instance_type": "t2.micro",
+        "region": "eu-west-1",
         "ssh_username": "ubuntu",
         "ami_name": "packer-jenkins {{timestamp}}"
     }],
