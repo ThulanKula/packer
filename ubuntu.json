@@ -10,11 +10,35 @@
             "owners": ["099720109477"],
             "most_recent": true
         },
+        "launch_block_device_mappings": [{
+            "device_name": "/dev/sda1",
+            "encrypted": true,
+            "delete_on_termination": true,
+            "volume_type": "gp2",
+            "kms_key_id": "arn:aws:kms:eu-west-1:517672327923:key/6fb7e1a4-44cd-4950-aba5-88714426201b"
+        }],
         "instance_type": "t2.micro",
         "region": "eu-west-1",
         "ssh_username": "ubuntu",
+        "ssh_port": 22,
+        "ssh_clear_authorized_keys": true,
+        "ssh_keypair_name": "shell-ireland",
+        "ssh_private_key_file": "~/Downloads/shell-ireland.pem",
+        "ami_users": "517672327923",
+        "encrypt_boot": true,
+        "kms_key_id": "arn:aws:kms:eu-west-1:517672327923:key/6fb7e1a4-44cd-4950-aba5-88714426201b",
+        "security_group_id": "sg-01383a9efee82702b",
         "ami_name": "packer-jenkins {{timestamp}}"
     }],
+    "provisioners":[
+        {
+        "type": "ansible",
+        "playbook_file": "main.yml",
+        "extra_arguments": [
+          "--verbose"
+        ]
+        }
+    ],
     "post-processors": [{
         "type": "manifest",
         "output": "manifest.json",

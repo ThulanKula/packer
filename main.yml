@@ -1,0 +1,21 @@
+---
+- hosts: all
+  become: true
+  vars: 
+    ssh_use_pam: true
+    jenkins_hostname: localhost
+    ansible_remote_tmp: /tmp/ansible
+    jenkins_plugins: [ansicolor]
+  tasks:
+    - name: Update & Upgrade
+      shell: | 
+        sudo apt update -y
+        sudo apt upgrade -y
+    - name: Create user account
+      ansible.builtin.user:
+        name: kula
+        comment: Thulani Kula
+        uid: 1040
+        group: admin
+
+      
