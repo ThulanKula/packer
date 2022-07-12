@@ -3,7 +3,7 @@
   become: true
   vars: 
     ssh_use_pam: true
-    jenkins_hostname: localhost
+    jenkins_hostname: 3.248.228.93
     ansible_remote_tmp: /tmp/ansible
     jenkins_plugins: [ansicolor]
   tasks:
