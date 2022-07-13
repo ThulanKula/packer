@@ -20,8 +20,6 @@
         "instance_type": "t2.micro",
         "region": "eu-west-1",
         "ssh_username": "ubuntu",
-        "ssh_port": 22,
-        "ssh_clear_authorized_keys": true,
         "ami_users": "517672327923",
         "encrypt_boot": true,
         "kms_key_id": "arn:aws:kms:eu-west-1:517672327923:key/6fb7e1a4-44cd-4950-aba5-88714426201b",
