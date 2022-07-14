@@ -21,6 +21,7 @@
         "region": "eu-west-1",
         "ssh_username": "ubuntu",
         "ssh_port": 22,
+        "temporary_key_pair_type" = "ed25519",
         "ami_users": "517672327923",
         "encrypt_boot": true,
         "kms_key_id": "arn:aws:kms:eu-west-1:517672327923:key/6fb7e1a4-44cd-4950-aba5-88714426201b",
