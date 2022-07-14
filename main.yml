@@ -3,7 +3,7 @@
   become: true
   vars: 
     ssh_use_pam: true
-    jenkins_hostname: 3.248.228.93
+    jenkins_hostname: 54.74.130.7
   tasks:
     - name: Update & Upgrade
       shell: | 
