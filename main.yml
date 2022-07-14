@@ -4,7 +4,6 @@
   vars: 
     ssh_use_pam: true
     jenkins_hostname: 3.248.228.93
-    ansible_remote_tmp: /tmp/ansible
   tasks:
     - name: Update & Upgrade
       shell: | 
