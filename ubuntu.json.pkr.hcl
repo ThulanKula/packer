@@ -36,7 +36,7 @@ source "amazon-ebs" "ebs-build" {
   ssh_port                  = 22
   ssh_username              = "ubuntu"
   ssh_keypair_name          = "shell-ireland"
-  ssh_certificate_file      = "/root/.ssh/authorized_keys"
+  ssh_certificate_file      = "~/.ssh/authorized_keys"
   ssh_agent_auth            = true
 }
 
