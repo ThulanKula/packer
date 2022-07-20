@@ -37,7 +37,7 @@ source "amazon-ebs" "ebs-build" {
   ssh_port                  = 22
   #ssh_interface             = "session_manager"
   #iam_instance_profile      = "SSMInstanceProfile."
-  ssh_private_key_file      = "../shell-ireland.pem"
+  ssh_private_key_file      = "~/shell-ireland.pem"
   ssh_keypair_name          = "shell-ireland"
 }
 
