@@ -36,6 +36,7 @@ source "amazon-ebs" "ebs-build" {
   ssh_username              = "ubuntu"
   ssh_interface             = "session_manager"
   iam_instance_profile      = "SSMInstanceProfile."
+  ssh_port                  = 22
 }
 
 
