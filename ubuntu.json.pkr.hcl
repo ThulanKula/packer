@@ -36,7 +36,7 @@ source "amazon-ebs" "ebs-build" {
   ssh_port                  = 22
   ssh_username              = "ubuntu"
   ssh_keypair_name          = "packer"
-  ssh_agent_auth            = true
+  ssh_private_key_file      = "/.ssh/"
 }
 
 
