@@ -8,10 +8,6 @@
     PubkeyAcceptedAlgorithms: +ssh-rsa
     HostkeyAlgorithms: +ssh-rsa
   tasks:
-    - name: Update & Upgrade
-      shell: | 
-        sudo apt update -y
-        sudo apt upgrade -y
     - name: Create user account
       ansible.builtin.user:
         name: kula
